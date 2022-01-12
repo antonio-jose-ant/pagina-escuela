@@ -1,0 +1,255 @@
+body{
+    width: auto;
+    height: 100%;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+p{
+    text-align: justify;
+}
+.menu{
+    width: 100%;
+    height: 80px;
+    font-weight: 800;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0px;
+    justify-content:flex-start;
+    position: fixed;
+    background-color: darkgray;
+}
+.menu-hamburger{
+    width: 100%;
+    height: auto;
+    font-weight: 800;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+    justify-content:center;
+    position: fixed;
+    background-color: darkgray;
+}
+div img.axolotl{
+    height: 70px;
+    width: auto;
+    margin: 0;
+    margin: 0 0 0 30px;
+}   
+.menu div.menua{
+    display: flex;
+    flex-direction: row;  
+    padding: 20px 10px;
+    width: 70%;
+    margin: 0 0 0 25%;
+}
+.menu div.menua a{
+    color: black;
+    padding: 10px;
+}
+.menu div.menua a:hover{
+    color: #aa1f1f;
+    padding: 10px;
+    border-bottom:solid 2px #aa1f1f;
+    transition-duration: .5s;
+}
+.menu div.menua div{
+    margin: 5px;
+}
+.menu-hamburger div.menua{
+    display: flex;
+    flex-direction: row;  
+    padding: 20px 10px;
+    width: 70%;
+    margin: 0 0 0 25%;
+}
+.menu-hamburger div.menua a{
+    color: black;
+    padding: 10px;
+}
+.menu-hamburger div.menua div{
+    margin: 5px;
+}
+/********************************/
+.axolotl{
+    animation-name: axolotl;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+    position: relative;
+}
+@keyframes axolotl {
+    0% {
+      top: 0;
+      left: 0;
+    }
+    100% {
+      top: 16px;
+      left: 16px;
+    }
+  }
+  /********************************/
+  section.inicio{
+      background-image: url(imagenes/inicio.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: auto;
+      display: flex;
+    flex-direction:column ;
+  }
+  section.inicio div.biv{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+div.bidd{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+div.bidd div{
+    margin: 0;
+    padding: 40px 40px 40px 60px;
+}
+  /********************************/
+  @media (max-width:800px){
+    .menu{
+        width: 100%;
+        height: 80px;
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0px;
+        justify-content:center;
+        position: fixed;
+        background-color: darkgray;
+    }
+    .menu div.menua{
+        display: flex;
+        flex-direction: column;  
+        padding: 20px 10px;
+        width: 70%;
+        position: absolute;
+        top: -211px;
+        margin:0;
+    }
+    .menu-hamburger div.menua{
+        display: flex;
+        flex-direction: column;  
+        padding: 20px 10px;
+        width: 70%;
+        margin:0;
+    }
+    .retraible div{
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        width: 60px;
+        height: 15px;
+        margin: 5px;
+        margin-bottom:5px ;
+        border-radius: 10px;
+    }
+    .menu-responsivo{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        position: relative;
+        top: 0;
+    }
+    div.bidd{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+  }
+  /******************************/
+  .social-media{
+    position: fixed;
+    bottom: 10px;
+    left: -2px;
+  }
+  .social-media div a{
+    display: flex;
+    background-color: #000;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .social-media div:hover a{
+      background-color: #aa1f1f;
+      transition-duration:2s ;
+  }
+  .social-media div:hover span{
+    color: #fff;
+    position: relative;
+    top: -43px;
+    z-index: -1;
+    left: 65px;
+    background: #000;
+    padding: 5px;
+    border-radius: 5px;
+    transition-duration:1s ;
+}
+.social-media div span{
+    color: transparent;
+    position: relative;
+    top: -43px;
+    z-index: -1;
+    left: 20px;
+}
+  .social-media a img{
+      width: 35px;
+      height: 35px;
+      margin: 5px 5px 0 0;
+      margin-left: calc(50% - 17.5px);
+      margin-top: calc(50% - 17.5px);
+  }
+  #uno{
+    margin-top: 100px;
+	display: block;
+	font-family: monospace;
+	color: white;
+	white-space: nowrap;
+	border-bottom: 4px solid;
+	width: 101px;
+	font-size: 30px;
+	margin:120px auto 20px auto;
+	animation: typing 3s infinite;
+	overflow: hidden;
+    background-color: #000;
+    padding: 3px;
+    border-radius: 10px;
+}
+@keyframes typing{
+	from{width: 0;}
+}
+@keyframes blink{
+	50%{border-color: transparent;}
+}
+.giff{
+	margin-left: 570px;
+	display:inline;
+	margin-top: -400px;
+}
+#footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
